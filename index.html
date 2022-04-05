@@ -1,15 +1,60 @@
 <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> 30203 김건우 </title>
 
-<html>
-    <head>
-        <title> 2022 대덕고 김건우 </title>
-    </head>
-    <body>
-        <div>
-            <img src="Timeline_302.png" width="700" height="900">
-        </div>
-        <div>
-            <h2> my name is </h2>
-        </div>
-    </body>
+    <style>
+        #form {
+            float: left;            
+        }
+        /* body {
+            text-align: center;
+        } */
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+
+    <div style="height: 700px; width: 100%;">
+        <span id="form" style="height: 100%; width: 45%;">
+            <img src="Timeline_302.png" width="100%" height="100%">
+        </span>
+        <span style="height: 100%; width: 55%;">
+
+            <!-- 현재 시간 -->
+            <div style="text-align: center; height: 30%; width: 100%;">
+                <span id = "time" style="color:#0F3368; font-size: 100px;">시간</span>
+                <span id = "ampm" style="color:#0F3368; font-size: 30px;">ampm</span>
+                <br>
+                <span id = "date" style="color:#0F3368; font-size: 20px;">date</span>
+                <script src="TimeSetting.js"></script>
+            </div>
+            
+            <div style="text-align: center; height: 70%; width: 100%;">
+                <!-- 급식 -->
+                <span style="float: left; width: 25%; height: 100%;">
+                    <h1>급식</h1>
+                    <div id="middle" style="color: #0F3368;"><b><bid>중식</bid></b><br></div>
+                    <p></p>
+                    <div id="last" style="color: #0F3368;"><b><bid>석식</bid></b><br></div>
+                    <script src="BAB.js"></script>
+                </span>
+                <!-- 디데이 -->
+                <span style="float: right; width: 25%; height: 100%;">
+                    <h1>D-day</h1>
+                    <span id = "Schedule" style="color:#0F3368;">일정들</span>
+                    <script src="D_day.js"></script>
+                </span>
+            </div>
+        </span>
+    </div>
+</body>
 </html>
