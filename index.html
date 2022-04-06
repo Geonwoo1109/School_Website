@@ -25,8 +25,30 @@
 
     <!-- 시간표 -->
     <div style="height: 100%; width: 100%;">
+
         <span id="form" style="height: 100%; width: 45%;">
-            <img src="Timeline_302.png" width="100%" height="100%">
+
+            <!-- 시간표 변경 -->
+            <div style="float: left; width: 25%; height: 10%; background-color: #d8edbc;">
+                <select name="language" onchange="handleOnChange(this)">
+                    <option value="3-1">1반</option>
+                    <option value="3-2">2반</option>
+                    <option value="3-3">3반</option>
+                    <option value="3-4">4반</option>
+                    <option value="3-5">5반</option>
+                    <option value="3-6">6반</option>
+                    <option value="3-7">7반</option>
+                    <option value="3-8">8반</option>
+                    <option value="3-9">9반</option>
+                    <option value="3-10">10반</option>
+                    <option value="3-11">11반</option>
+                </select>
+                <span id="result">123</span>
+                <script src="Timetable.js"></script>
+            </div>
+
+
+            <img id="TimeTable" src="시간표들/대덕고 3-2 자세히.png" width="100%" height="90%">
         </span>
 
         <span style="height: 100%; width: 55%;">
@@ -49,11 +71,12 @@
                     <script src="BAB.js"></script>
                 </span>
                 <!-- 디데이 -->
-                <span style="float: right; width: 25%; height: 100%;">
+                <span style="float: right; width: 25%; height: 90%;">
                     <h1>D-day</h1>
                     <span id = "Schedule" style="color:#0F3368;">일정들</span>
                     <script src="D_day.js"></script>
                 </span>
+                
             </div>
         </span>
     </div>
