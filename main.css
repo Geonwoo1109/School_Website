@@ -1,0 +1,28 @@
+#form {
+    float: left;            
+}
+/* body {
+    text-align: center;
+} */
+h1 {
+    text-align: center;
+}
+
+#mid_1, #end_1 {
+    color: #0F3368;
+    font-size: 20px;
+    font-weight: 600;
+}
+#mid_2, #end_2 {
+    color: #0F3368;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/*
+--선택자--
+#~{}: id () id는 어느 고유한 태그에게 주는거
+.~{}: class (한번에 여러 클래스명 부여 가능) class여러 공통된 태그의 묶음이고
+~{}: tag
+*/
