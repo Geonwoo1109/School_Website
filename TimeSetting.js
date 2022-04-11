@@ -20,7 +20,7 @@ function Time() {
         +":"+ (min<10 ? "0":"") + min
         +":"+ (sec<10 ? "0":"") + sec;
 
-    ampm.innerText = hour>12 ? "PM" : "AM";
+    ampm.innerText = hour>=12 ? "PM" : "AM";
 
     today.innerText =
         year + "년 " +
