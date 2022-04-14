@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> 전체급식 </title>
+
+    <!-- iframe 높이 100% 가져오기 S -->
+    <script type="text/javascript"> 
+        function calcHeight(){
+            
+            document.getElementByClassName('h_iframe').contentWindow.document.body.scrollHeight;         
+            document.getElementByClassName('h_iframe').height = the_height;         
+            document.getElementByClassName('h_iframe').style.overflow = "hidden";
+        }
+    </script>
+    <!-- iframe 높이 100% 가져오기 E -->
+
+</head>
+<body>
+    <div style="text-align: center;">
+        <span style="display:inline-block; width: 30%; background-color: rgb(160, 160, 160);">
+            <h1>급식 순서</h1>
+            <p>(급식 순서 들어갈 자리)</p>
+            <p id="Allergy">알레르기정보들</p>
+            <div>1. 난류
+2. 우유
+3. 메밀
+4. 땅콩
+5. 대두
+6. 밀
+7. 고등어
+8. 게
+9. 새우
+10. 돼지고기
+11. 복숭아
+12. 토마토
+13. 아황산류
+14. 호두
+15. 닭고기
+16. 쇠고기
+17. 오징어
+18. 조개류(굴, 전복, 홍합 포함)
+            </div>
+        </span>
+        
+            <iframe src="BAB_lunch.html" class="h_iframe" onload="calcHeight();" 
+                name="" title="" frameborder="0" scrolling="auto" 
+                style="overflow-x:hidden; overflow:auto; width:33%; min-height: 600px;">
+            </iframe>
+            <iframe src="BAB_dinner.html" class="h_iframe" onload="calcHeight();" 
+                name="" title="" frameborder="0" scrolling="auto" 
+                style="overflow-x:hidden; overflow:auto; width:33%; min-height: 600px;">
+            </iframe>
+            <!-- <script src="BAB_lunch.js"></script> -->
+    </div>
+</body>
+</html>
