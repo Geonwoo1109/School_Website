@@ -2,10 +2,10 @@ function alarm() {
 
     //var 월 = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-    return "[ 시험일정 ]"
-        + "\n4월 모평: " + D_day("Apr 13, 2022")
+    return "[ 시험일정 ]"  
+        //+ "\n4월 모평: " + D_day("Apr 13, 2022")
         + "\n중간고사: " + D_day("Apr 29, 2022")
-        //+ "\n6월 모평: " + D_day("Jun 9, 2022")
+        + "\n6월 모평: " + D_day("Jun 9, 2022")
         //+ "\n기말고사: " + D_day("Jun 30, 2022")
         //+ "\n7월 모평: " + D_day("Jul 6, 2022")
         + "\n수능: " + D_day("Nov 17, 2022")

@@ -14,7 +14,7 @@ function is_checked() {
     } else {
         document.getElementById("ChangeTimeTable").style.display = "block";
 
-        document.getElementById("TimeTable").src = "시간표들/대덕고 3-1 자세히.png";
+        document.getElementById("TimeTable").src = "시간표들/가장 처음.png";
         document.getElementById('result').innerText = "1반";
 
         document.getElementById("Bab_And_Dday").style.display = "block";
