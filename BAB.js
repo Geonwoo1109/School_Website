@@ -25,7 +25,7 @@ $.ajax({
 
 // console.log(main.getHours());
 document.getElementById("mid_1").innerText = "중식 ("+data중.MLSV_YMD.slice(4,6)+"."+data중.MLSV_YMD.slice(6,8)+")";
-document.getElementById("mid_2").innerHTML = data중.DDISH_NM.replace(/ /g, "\n");
+document.getElementById("mid_2").innerHTML = data중.DDISH_NM.replace(/\./g,"").replace(/\(([0-9]+)\)/gm,"").replace(/ +/g, "\n").replace(/\n$/g, "");
 
 
 //석식
@@ -42,7 +42,7 @@ $.ajax({
 	});
 
 document.getElementById("end_1").innerText = "석식 ("+data석.MLSV_YMD.slice(4,6)+"."+data석.MLSV_YMD.slice(6,8)+")";
-document.getElementById("end_2").innerHTML = data석.DDISH_NM.replace(/ /g, "\n");
+document.getElementById("end_2").innerHTML = data석.DDISH_NM.replace(/\./g,"").replace(/\(([0-9]+)\)/gm,"").replace(/ +/g, "\n").replace(/\n$/g, "");
 
 
 

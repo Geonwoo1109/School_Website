@@ -19,6 +19,12 @@ h1 {
     font-weight: 500;
 }
 
+/* #mid_2 {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10%;
+} */
+
 /*
 --선택자--
 #~{}: id () id는 어느 고유한 태그에게 주는거
