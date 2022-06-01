@@ -2,6 +2,7 @@
 학교에서 쉬는시간마다 띄워둘 웹 개발
 
 https://geonwoo1109.github.io/School_Website/
+https://geonwoo1109.netlify.app/
 
 
 [포트폴리오 작성용 개발일지]
@@ -16,3 +17,4 @@ https://geonwoo1109.github.io/School_Website/
 4.14 iframe - 중식과 석식 여러개씩 블러오는 체이지 삽입
 4.17 사용자 편의를 위해 새로고침 시 기본 시간표 화면을 불러옴 + 급식순서 추가
 4.24 엄청난 정규식을 사용하여 메인화면 급식 숫자 없앰(가독성 증가, 이름에 숫자들어간거 살리기) + 전체보기 버튼을 누르고싶게 만듦(그림자 추가)
+6.1 색상 관련 코드를 전부 main.css로 
