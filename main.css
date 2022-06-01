@@ -1,20 +1,24 @@
 #form {
     float: left;            
 }
-/* body {
-    text-align: center;
-} */
+body {
+    background-color: #f4effb;
+}
 h1 {
     text-align: center;
 }
 
+div, h1 {
+    color: #502989;
+}
+
 #mid_1, #end_1 {
-    color: #0F3368;
+    color: #710193;
     font-size: 20px;
     font-weight: 600;
 }
 #mid_2, #end_2 {
-    color: #0F3368;
+    color: #710193;
     font-size: 16px;
     font-weight: 500;
 }
