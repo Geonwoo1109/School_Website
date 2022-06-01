@@ -2,7 +2,7 @@
 학교에서 쉬는시간마다 띄워둘 웹 개발
 
   - https://geonwoo1109.github.io/School_Website/
-  - https://geonwoo1109.netlify.app/
+  - (이걸로 써주세요) https://geonwoo1109.netlify.app/
 
 
 [포트폴리오 작성용 개발일지]
