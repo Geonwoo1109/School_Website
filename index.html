@@ -25,7 +25,7 @@
 
         <!-- 시간표 -->
         <span id="form" style="height: 100%; width: 45%;">
-            <div id="ChangeTimeTable" style="float: left; width: 25%; height: 5%; background-color: #e3cef6;">
+            <div id="ChangeTimeTable" style="float: left; width: 25%; height: 5%; background-color: #bee9e8;">
                 <select name="language" onchange="handleOnChange(this)">
                     <option value="3-1">1반</option>
                     <option value="3-2">2반</option>
@@ -39,8 +39,17 @@
                     <option value="3-10">10반</option>
                     <option value="3-11">11반</option>
                 </select>
-                <span id="result">시간표</span>
+                <span id="result_Timetable" class="Element">시간표</span>
                 <script src="Timetable.js"></script>
+            </div>
+            <div id="ChangeTheme" style="float: left; width: 25%; height: 5%; background-color: #bee9e8; margin-left: 10px">
+                <select name="language" onchange="theme(this)">
+                    <option value="white">기본</option>
+                    <option value="purple">보라색</option>
+                    <option value="blue">파란색</option>
+                </select>
+                <span id="result_Theme" class="Element">테마</span>
+                <script src="Theme.js"></script>
             </div>
             <img id="TimeTable" src="시간표들(배경 제거)/가장 처음.png" width="100%" height="95%">
         </span>
@@ -48,19 +57,19 @@
         <span style="height: 100%; width: 55%; text-align: center;">
 
             <!-- 체크박스 >> 모의고사용 -->
-            <div style="text-align: right; width: 100%;">
+            <!-- <div class="Element" style="text-align: right; width: 100%;">
                 <label class="switch">
                     <input type="checkbox" id="checkbox1" onclick="is_checked()"> 모의고사
                     <span class="slider round"></span>
                     <script src="checkbox.js"></script>
                 </label>
-            </div>
+            </div> -->
             
             
 
 
             <!-- 현재 시간 -->
-            <div id="watch" style="text-align: center; height: 50%; width: 100%;">
+            <div class="Title" id="watch" style="text-align: center; height: 50%; width: 100%;">
                 <span id = "time" style="font-size: 100px;">시간</span>
                 <span id = "ampm" style=" font-size: 30px;">ampm</span>
                 <br>
@@ -71,13 +80,17 @@
             <div id="Bab_And_Dday" style="position: relative; text-align: center; height: 70%; width: 100%;">
                 <!-- 급식 -->
                 <span style="float: left; width: 25%; height: 100%;">
-                    <h1>급식</h1>
-                    <div id="mid_1" class="mid">중식+날짜</div>
-                    <div id="mid_2" class="mid">중식내용</div>
+                    <div class="Title"><h1>급식</h1></div>
+                    
+                    <div class="Element">
+                        <div id="mid_1" class="mid">중식+날짜</div>
+                        <div id="mid_2" class="mid">중식내용</div>
+                        <p></p>
+                        <div id="end_1" class="end">석식+날짜</div>
+                        <div id="end_2" class="end">석식내용</div>
                     <p></p>
-                    <div id="end_1" class="end">석식+날짜</div>
-                    <div id="end_2" class="end">석식내용</div>
-                    <p></p>
+                    </div>
+                    
                     <a id="BAB_allsee" href="BAB_allsee.html">전체보기</a>
                     <script src="BAB.js"></script>
                 </span>
@@ -85,30 +98,28 @@
                 <span style="float: right; width: 25%; height: 90%;">
                     <!-- 디데이 -->
                     <div>
-                        <h1>D-day</h1>
-                        <span id = "Schedule">일정들</span>
+                        <h1 class="Title">D-day</h1>
+                        <span class="Element" id = "Schedule">일정들</span>
                         <script src="D_day.js"></script>
                     </div>
                     <!-- 동아리 -->
                     <div>
                         
-                        <h1>동아리</h1>
-                        <div id = "Club_1">이번주 금요일은</div>
-                        <div od="Club_2" style="font-size: 24px">자습</div>
-                        <div id = "Club_3">입니다<br><br>다음 동아리: 7월 8일</div>
-
+                        <h1 class="Title">동아리</h1>
+                        <div class="Element">
+                            <div id = "Club_1">이번주 금요일은</div>
+                            <div od="Club_2" style="font-size: 24px">자습</div>
+                            <div id = "Club_3">입니다<br><br>다음 동아리: 7월 8일</div>
+                        </div>
                         
                     </div>
                 </span>
                 
             </div>
-            <div id="Pre_Test"
-                style="display: none; height: 60%; width: 100%;">
-                <br>
-                <br>
-                <br>
+            <!-- <div id="Pre_Test" style="display: none; height: 60%; width: 100%;">
+                <br><br><br>
                 <img src="시간표들/모의고사 주의사항.png" width="40%" height="95%">
-            </div>
+            </div> -->
         </span>
     </div>
 </body>

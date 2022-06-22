@@ -6,22 +6,28 @@ body {
     background-color: #f4effb;
 }
 */
+.Title {
+    color: #0f3368
+}
+.Element {
+    color: #164996
+}
 
 h1 {
     text-align: center;
 }
 
-div, h1 {
-    color: #502989;
-}
+/* div, h1 {
+    color: #0f3368;
+} */
 
 #mid_1, #end_1 {
-    color: #710193;
+    /* color: #0f3368; */
     font-size: 20px;
     font-weight: 600;
 }
 #mid_2, #end_2 {
-    color: #710193;
+    /* color: #0f3368; */
     font-size: 16px;
     font-weight: 500;
 }
