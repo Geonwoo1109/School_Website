@@ -40,7 +40,7 @@
                     <option value="3-11">11반</option>
                 </select>
                 <span id="result_Timetable" class="Element">시간표</span>
-                <script src="Timetable.js"></script>
+                <script src="setBabAndTimetable.js"></script>
             </div>
             <div id="ChangeTheme" style="float: left; width: 25%; height: 5%; background-color: #bee9e8; margin-left: 10px">
                 <select name="language" onchange="theme(this)">
@@ -80,7 +80,10 @@
             <div id="Bab_And_Dday" style="position: relative; text-align: center; height: 70%; width: 100%;">
                 <!-- 급식 -->
                 <span style="float: left; width: 25%; height: 100%;">
-                    <div class="Title"><h1>급식</h1></div>
+                    <div class="Title"><h1 style="margin-bottom: 0px">급식</h1></div>
+                    
+                    <div class="Element" id="BabOrder">n번째 (12:03 출발)</div>
+                    <br>
                     
                     <div class="Element">
                         <div id="mid_1" class="mid">중식+날짜</div>
