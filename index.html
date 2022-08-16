@@ -112,12 +112,21 @@
                     <div>
                         
                         <h1 class="Title">수능</h1>
-                        <h1 class="Title">D-100</h1>
-                        <!-- <div class="Element">
-                            <div id = "Club_1">반톡에서</div>
-                            <div od="Club_2" style="font-size: 24px">.전체채팅</div>
-                            <div id = "Club_3">을 치면 채팅 순위를 보여줍니다!</div>
-                        </div> -->
+                        <h1 class="Title" id="CATday">D-100</h1>
+                        <script>
+                            function D_day(date) {
+                                var temp = Math.floor((new Date() - new Date(date)) / (1000*60*60*24));
+                                if (temp == 0) return "D-Day";
+                                else if (temp > 0) return "D+"+temp;
+                                else return "D"+temp;
+                            }
+                            document.getElementById("CATday").innerText = D_day("Nov 17, 2022");
+                        </script>
+                        <div class="Element">
+                            <!-- <div id = "Club_1">반톡에서</div>
+                            <div od="Club_2" style="font-size: 24px">.전체채팅</div> -->
+                            <div id = "Club_3">화이팅!</div>
+                        </div>
                         
                     </div>
                 </span>
