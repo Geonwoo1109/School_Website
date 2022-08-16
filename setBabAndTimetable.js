@@ -8,7 +8,7 @@ function handleOnChange(e) {
     document.getElementById('result_Timetable').innerText = data;
     document.getElementById("TimeTable").src="3학년 2학기 시간표/"+data+".png";
     
-    var Rank = changeOrder(Number(data.replace("3-", "")), new Date().getDay());
+    var Rank = changeOrder(Number(data.replace("반", "")), new Date().getDay());
     document.getElementById("BabOrder").innerText = "우리반: "+ Rank + "번째 (12:" + GoTime[Rank] + " 출발)";
 }
 
