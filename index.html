@@ -112,7 +112,7 @@
                     <div>
                         
                         <h1 class="Title">수능</h1>
-                        <h1 class="Title" id="CATday">D-100</h1>
+                        <h1 class="Element" id="CATday" style="font-size: 24px">D-100</h1>
                         <script>
                             function D_day(date) {
                                 var temp = Math.floor((new Date() - new Date(date)) / (1000*60*60*24));
@@ -120,7 +120,7 @@
                                 else if (temp > 0) return "D+"+temp;
                                 else return "D"+temp;
                             }
-                            document.getElementById("CATday").innerText = D_day("Nov 17, 2022");
+                            document.getElementById("CATday").innerText = ">> "+D_day("Nov 17, 2022") + " <<";
                         </script>
                         <div class="Element">
                             <!-- <div id = "Club_1">반톡에서</div>
