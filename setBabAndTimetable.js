@@ -14,7 +14,7 @@ function handleOnChange(e) {
 
 	if (data == "2반") {
 		document.getElementById("Timeline_7th").style.display = "block";
-		document.getElementById('class2_7th').innerHTML = "class_2_timeline_7th";
+		document.getElementById('class2_7th').innerHTML = class_2_timeline_7th;
 
 	} else {
 		document.getElementById("Timeline_7th").style.display = "none";
