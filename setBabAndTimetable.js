@@ -2,6 +2,7 @@ console.log("hi")
 var GoTime = ["", "00", "02", "05", "07", "10"];
 var class_2_timeline_7th = "체육 선택A 국어B 영어 창체";
 
+/*
 function today_timeline_7th(subjects) {
 	var arr = [];
 	var day = new Date().getDay();
@@ -12,6 +13,7 @@ function today_timeline_7th(subjects) {
 	}
 	return arr.join(" ");
 }
+*/
 
 function handleOnChange(e) {
     // 선택된 데이터 가져오기
@@ -25,7 +27,7 @@ function handleOnChange(e) {
 
 	if (data == "2반") {
 		document.getElementById("Timeline_7th").style.display = "block";
-		document.getElementById('class2_7th').innerHTML = today_timeline_7th(class_2_timeline_7th);
+		document.getElementById('class2_7th').innerText = class_2_timeline_7th;
 
 	} else {
 		document.getElementById("Timeline_7th").style.display = "none";
