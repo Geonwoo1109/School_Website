@@ -11,8 +11,11 @@ function handleOnChange(e) {
     var Rank = changeOrder(Number(data.replace("반", "")), new Date().getDay());
     document.getElementById("BabOrder").innerText = "우리반: "+ Rank + "번째 (12:" + GoTime[Rank] + " 출발)";
 
-	if (data == "2반") document.getElementById("Timeline_7th").style.display = "block";
-	else document.getElementById("Timeline_7th").style.display = "none";
+	if (data == "2반") {
+		document.getElementById("Timeline_7th").style.display = "block";
+	} else {
+		document.getElementById("Timeline_7th").style.display = "none";
+	}
 }
 
 function changeOrder(classNumber, day) {
