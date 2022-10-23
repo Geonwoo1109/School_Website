@@ -1,6 +1,6 @@
 console.log("hi")
 var GoTime = ["", "00", "02", "05", "07", "10"];
-var class_2_timeline_7th = "영어 영어 국어B 선택A 수학";
+var class_2_timeline_7th = "국어A 영어 체육 선택A 국어B";
 
 /*
 function today_timeline_7th(subjects) {
