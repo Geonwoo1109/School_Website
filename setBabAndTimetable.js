@@ -1,6 +1,6 @@
 console.log("hi")
 var GoTime = ["", "00", "02", "05", "07", "10"];
-
+/*
 function handleOnChange(e) {
     // 선택된 데이터 가져오기
     const data = e.value;
@@ -11,6 +11,7 @@ function handleOnChange(e) {
     var Rank = changeOrder(Number(data.replace("3-", "")), new Date().getDay());
     document.getElementById("BabOrder").innerText = "우리반: "+ Rank + "번째 (12:" + GoTime[Rank] + " 출발)";
 }
+*/
 
 function changeOrder(classNumber, day) {
 		var ChangeClass = [0,1,1,1,2,2,3,3,4,4,5,5];
