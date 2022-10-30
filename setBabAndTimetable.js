@@ -8,7 +8,7 @@ function handleOnChange(e) {
     // document.getElementById('result_Timetable').innerText = data;
     //  document.getElementById("TimeTable").src="시간표들(배경 제거)/대덕고 "+data+" 자세히.png";
     
-    var Rank = changeOrder(Number(data.replace("3-", "")), new Date().getDay());
+    var Rank = changeOrder(Number(data.replace("반", "")), new Date().getDay());
     document.getElementById("BabOrder").innerText = "우리반: "+ Rank + "번째 (12:" + GoTime[Rank] + " 출발)";
 }
 
