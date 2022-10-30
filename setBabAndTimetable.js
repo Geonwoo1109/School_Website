@@ -1,17 +1,17 @@
 console.log("hi")
 var GoTime = ["", "00", "02", "05", "07", "10"];
-/*
+
 function handleOnChange(e) {
     // 선택된 데이터 가져오기
     const data = e.value;
     
-    document.getElementById('result_Timetable').innerText = data;
-    document.getElementById("TimeTable").src="시간표들(배경 제거)/대덕고 "+data+" 자세히.png";
+    // document.getElementById('result_Timetable').innerText = data;
+    //  document.getElementById("TimeTable").src="시간표들(배경 제거)/대덕고 "+data+" 자세히.png";
     
     var Rank = changeOrder(Number(data.replace("3-", "")), new Date().getDay());
     document.getElementById("BabOrder").innerText = "우리반: "+ Rank + "번째 (12:" + GoTime[Rank] + " 출발)";
 }
-*/
+
 
 function changeOrder(classNumber, day) {
 		var ChangeClass = [0,1,1,1,2,2,3,3,4,4,5,5];
