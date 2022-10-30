@@ -1,37 +1,15 @@
 console.log("hi")
 var GoTime = ["", "00", "02", "05", "07", "10"];
-var class_2_timeline_7th = "국어A 영어 체육 선택A 국어B";
-
-/*
-function today_timeline_7th(subjects) {
-	var arr = [];
-	var day = new Date().getDay();
-	var s_arr = subjects.split(" ");
-	for (i=0; i<5; i++) {
-		if (i = day+1) arr.push("<b><big>"+s_arr[i]+"</big></b>");
-		else arr.push(s_arr[i]);
-	}
-	return arr.join(" ");
-}
-*/
 
 function handleOnChange(e) {
     // 선택된 데이터 가져오기
     const data = e.value;
     
     document.getElementById('result_Timetable').innerText = data;
-    document.getElementById("TimeTable").src="3학년 2학기 시간표/"+data+".png";
+    document.getElementById("TimeTable").src="시간표들(배경 제거)/대덕고 "+data+" 자세히.png";
     
-    var Rank = changeOrder(Number(data.replace("반", "")), new Date().getDay());
+    var Rank = changeOrder(Number(data.replace("3-", "")), new Date().getDay());
     document.getElementById("BabOrder").innerText = "우리반: "+ Rank + "번째 (12:" + GoTime[Rank] + " 출발)";
-
-	if (data == "2반") {
-		document.getElementById("Timeline_7th").style.display = "block";
-		document.getElementById('class2_7th').innerText = class_2_timeline_7th;
-
-	} else {
-		document.getElementById("Timeline_7th").style.display = "none";
-	}
 }
 
 function changeOrder(classNumber, day) {

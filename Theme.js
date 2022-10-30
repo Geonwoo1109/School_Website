@@ -38,12 +38,12 @@ function theme(e) {
 }
 
 function ChangeTheme(Tc, Ec) {
-	for (i=0; i<(".Title").length-1; i++) {
+		for (i=0; i<(".Title").length-1; i++) {
         document.querySelectorAll(".Title")[i].style.color = Tc;
-	}
-	for (i=0; i<(".Element").length-1; i++) {
+		}
+		for (i=0; i<(".Element").length-1; i++) {
         document.querySelectorAll(".Element")[i].style.color = Ec;
-	}
+		}
 }
 
 

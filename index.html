@@ -27,17 +27,17 @@
         <span id="form" style="height: 100%; width: 45%;">
             <div id="ChangeTimeTable" style="float: left; width: 25%; height: 5%; background-color: #bee9e8;">
                 <select name="language" onchange="handleOnChange(this)">
-                    <option value="1반">1반</option>
-                    <option value="2반">2반</option>
-                    <option value="3반">3반</option>
-                    <option value="4반">4반</option>
-                    <option value="5반">5반</option>
-                    <option value="6반">6반</option>
-                    <option value="7반">7반</option>
-                    <option value="8반">8반</option>
-                    <option value="9반">9반</option>
-                    <option value="10반">10반</option>
-                    <option value="11반">11반</option>
+                    <option value="3-1">1반</option>
+                    <option value="3-2">2반</option>
+                    <option value="3-3">3반</option>
+                    <option value="3-4">4반</option>
+                    <option value="3-5">5반</option>
+                    <option value="3-6">6반</option>
+                    <option value="3-7">7반</option>
+                    <option value="3-8">8반</option>
+                    <option value="3-9">9반</option>
+                    <option value="3-10">10반</option>
+                    <option value="3-11">11반</option>
                 </select>
                 <span id="result_Timetable" class="Element">시간표</span>
                 <script src="setBabAndTimetable.js"></script>
@@ -53,7 +53,7 @@
                 <span id="result_Theme" class="Element">테마</span>
                 <script src="Theme.js"></script>
             </div>
-            <img id="TimeTable" src="3학년 2학기 시간표/first.png" width="100%" height="95%">
+            <img id="TimeTable" src="시간표들(배경 제거)/가장 처음.png" width="100%" height="95%">
         </span>
 
         <span style="height: 100%; width: 55%; text-align: center;">
@@ -66,7 +66,6 @@
                     <script src="checkbox.js"></script>
                 </label>
             </div> -->
-            <!--<div class="Element">모의고사 모드 열기</div> -->
             
             
 
@@ -102,41 +101,22 @@
                 </span>
                 
                 <span style="float: right; width: 25%; height: 90%;">
-                    <!-- 이번주 7교시 -->
-                    <div id="Timeline_7th" style="display: none;">
-                        
-                        <h1 class="Title" style="margin-bottom: 0px">이번주 7교시</h1>
-                        <div class="Element" id="class2_7th">과목들 들어갈자리</div>
-                        
-                        
-                    </div>
-                    <!-- 수능남은날 -->
-                    <div>
-                        
-                        <h1 class="Title">수능</h1>
-                        <h1 class="Element" id="CATday" style="font-size: 24px">D-100</h1>
-                        <script>
-                            function D_day(date) {
-                                var temp = Math.floor((new Date() - new Date(date)) / (1000*60*60*24));
-                                if (temp == 0) return "D-Day";
-                                else if (temp > 0) return "D+"+temp;
-                                else return "D"+temp;
-                            }
-                            document.getElementById("CATday").innerText = ">> "+D_day("Nov 17, 2022") + " <<";
-                        </script>
-                        <div class="Element">
-                            <!-- <div id = "Club_1">반톡에서</div>
-                            <div od="Club_2" style="font-size: 24px">.전체채팅</div> -->
-                            <div id = "Club_3">화이팅!</div>
-                        </div>
-                        
-                    </div>
-
                     <!-- 디데이 -->
                     <div>
                         <h1 class="Title">D-day</h1>
                         <span class="Element" id = "Schedule">일정들</span>
                         <script src="D_day.js"></script>
+                    </div>
+                    <!-- 동아리 -->
+                    <div>
+                        
+                        <h1 class="Title">동아리</h1>
+                        <div class="Element">
+                            <div id = "Club_1">이번주 금요일은</div>
+                            <div od="Club_2" style="font-size: 24px">자습</div>
+                            <div id = "Club_3">입니다<br><br>다음 동아리: 7월 8일</div>
+                        </div>
+                        
                     </div>
                 </span>
                 
